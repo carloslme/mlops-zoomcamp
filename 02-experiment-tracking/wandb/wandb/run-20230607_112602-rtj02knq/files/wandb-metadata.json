@@ -1,0 +1,49 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.10.11",
+    "heartbeatAt": "2023-06-07T17:26:02.901512",
+    "startedAt": "2023-06-07T17:26:02.289547",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--wandb_project",
+        "wandb-homework",
+        "--wandb_entity",
+        "carloslme",
+        "--data_artifact",
+        "carloslme/wandb-homework/NYC-Taxi:v0"
+    ],
+    "state": "running",
+    "program": "/Users/deltasmith/mlops-zoomcamp/02-experiment-tracking/wandb/train.py",
+    "codePath": "02-experiment-tracking/wandb/train.py",
+    "git": {
+        "remote": "https://github.com/carloslme/mlops-zoomcamp.git",
+        "commit": "124131fc9a72a92b672da6c5b9886e950101460a"
+    },
+    "email": "carloslmescom@gmail.com",
+    "root": "/Users/deltasmith/mlops-zoomcamp",
+    "host": "MacBook-Pro-de-Carlangas.local",
+    "username": "deltasmith",
+    "executable": "/Users/deltasmith/mlops-zoomcamp/.conda/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2600,
+        "min": 2600,
+        "max": 2600
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2600,
+            "min": 2600,
+            "max": 2600
+        }
+    ],
+    "disk": {
+        "total": 233.46913528442383,
+        "used": 172.97770309448242
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

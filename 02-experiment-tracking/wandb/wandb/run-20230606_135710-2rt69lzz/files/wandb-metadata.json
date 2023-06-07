@@ -1,0 +1,47 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.10.11",
+    "heartbeatAt": "2023-06-06T19:57:12.415002",
+    "startedAt": "2023-06-06T19:57:10.738050",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--raw_data_path",
+        "02-experiment-tracking/data",
+        "--dest_path",
+        "./output"
+    ],
+    "state": "running",
+    "program": "/Users/deltasmith/mlops-zoomcamp/02-experiment-tracking/wandb/preprocess_data.py",
+    "codePath": "02-experiment-tracking/wandb/preprocess_data.py",
+    "git": {
+        "remote": "https://github.com/carloslme/mlops-zoomcamp.git",
+        "commit": "60a89dcd34e7c0b3698ea1ab200b860202e87a1b"
+    },
+    "email": "carloslmescom@gmail.com",
+    "root": "/Users/deltasmith/mlops-zoomcamp",
+    "host": "MacBook-Pro-de-Carlangas.local",
+    "username": "deltasmith",
+    "executable": "/Users/deltasmith/mlops-zoomcamp/.conda/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2600,
+        "min": 2600,
+        "max": 2600
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2600,
+            "min": 2600,
+            "max": 2600
+        }
+    ],
+    "disk": {
+        "total": 233.46913528442383,
+        "used": 172.9504852294922
+    },
+    "memory": {
+        "total": 16.0
+    }
+}
