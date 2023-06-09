@@ -268,3 +268,5 @@ a.py
 
 # Pytest-monitor load testing DB file
 *.pymon
+
+.conda
