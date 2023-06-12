@@ -1,7 +1,7 @@
 # File for configuring project / deployment build, push and pull steps
 
 # Generic metadata about this project
-name: '3.4'
+name: 03-orchestration
 prefect-version: 2.10.8
 
 # build section allows you to manage and build docker images
@@ -14,5 +14,5 @@ push: null
 pull:
 - prefect.projects.steps.git_clone_project:
     repository: https://github.com/carloslme/mlops-zoomcamp.git
-    branch: 03-orchestration
+    branch: main
     access_token: null
