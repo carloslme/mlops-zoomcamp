@@ -1,3 +1,4 @@
+import os
 import pathlib
 import pickle
 import pandas as pd
@@ -11,6 +12,8 @@ import xgboost as xgb
 from prefect import flow, task
 from prefect.artifacts import create_markdown_artifact
 from datetime import date
+
+from prefect_email import EmailServerCredentials, email_send_message
 
 
 @task(retries=3, retry_delay_seconds=2, name="Read taxi data")
@@ -127,6 +130,18 @@ def train_best_model(
         )
     return None
 
+def example_email_send_message_flow(email_server_credentials):
+    subject = email_send_message(
+        email_server_credentials=email_server_credentials,
+        subject="TEST: Alert using Gmail",
+        msg="The email_send_message method is working!",
+        email_to=email_server_credentials.username,
+    )
+
+    print(f"Send email notification with {subject}")
+
+    return None
+
 
 @flow(name="main_flow")
 def main_flow(
@@ -149,6 +164,10 @@ def main_flow(
     # Train
     train_best_model(X_train, X_val, y_train, y_val, dv)
 
+    # Send notification by email
+    email_name = os.getenv("EMAIL_NAME")
+    email_credentials_block = EmailServerCredentials.load(email_name)
+    example_email_send_message_flow(email_credentials_block)
 
 if __name__ == "__main__":
     main_flow()
