@@ -1,0 +1,6 @@
+fastapi
+scikit-learn==1.2.2
+pandas
+uvicorn
+gunicorn
+pyarrow
