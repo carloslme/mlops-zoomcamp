@@ -2,7 +2,7 @@
 
 In this homework, we'll deploy the ride duration model in batch mode. Like in homework 1, we'll use the Yellow Taxi Trip Records dataset. 
 
-You'll find the starter code in the [homework](homework) directory.
+You'll find the starter code in the [homework](https://github.com/DataTalksClub/mlops-zoomcamp/tree/main/cohorts/2023/04-deployment/homework) directory.
 
 
 ## Q1. Notebook
