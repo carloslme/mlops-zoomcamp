@@ -269,3 +269,5 @@ a.py
 *.pymon
 
 .conda
+
+05-monitoring/data
