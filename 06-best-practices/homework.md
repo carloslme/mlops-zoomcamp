@@ -32,6 +32,10 @@ filesystem. E.g. here:
 output_file = f'taxi_type=yellow_year={year:04d}_month={month:02d}.parquet'
 ```
 
+```bash
+python batch.py 2022 02
+```
+
 ## Q2. Installing pytest
 
 Now we need to install `pytest`:
